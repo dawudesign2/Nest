@@ -2,7 +2,7 @@
 GET http://localhost:3000/message
 
 ### Get a message by id
-GET http://localhost:3000/message/1
+GET http://localhost:3000/message/374
 
 
 ### Create a new message
@@ -10,5 +10,5 @@ POST http://localhost:3000/message
 Content-Type: application/json
 
 {
-  "message": "Hello World"
+  "message": "Boujour le monde"
 }
