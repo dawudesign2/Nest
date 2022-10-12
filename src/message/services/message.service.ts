@@ -1,7 +1,10 @@
 import { MessageRepository } from '../repositories/message.repository';
 import { CreateMessage } from '../dtos/createMessage.dto';
 export class MessageService {
-  constructor(private messageRepository: MessageRepository) {}
+  messageRepository: MessageRepository;
+  constructor() {
+    this.messageRepository = new MessageRepository();
+  }
   async findOne(id: string) {
     return this.messageRepository.findOne(id);
   }
